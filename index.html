@@ -1,255 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazone UI Clone</title>
-    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>E-Commerce Products Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montenegrin+Gothic+One&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Playwrite+NZ+Basic:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Playwrite+US+Trad+Guides&family=Slabo+13px&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<section>
 
-    <!--Header of website-->
+<body>
+    <main>
+        <h1>E-Commerce Products Page</h1>
+        <div class="products-page">
+            <!-- Filter Sidebar Code -->
+            <div class="filter-section">
+                <div class="filter-header">
+                    <h2>Filters</h2>
+                    <p>Clear All</p>
+                </div>
 
-    <header>
+                <!-- Category filters -->
+                <div class="category-filters">
+                    <h3>Category</h3>
+                    <div class="filter-row">
+                        <input type="checkbox" id="mens">
+                        <label for="mens">Mens</label>
+                    </div>
 
-        <!--Header section of left-->
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="womens">
+                        <label for="womens">Womens</label>
+                    </div>
 
-        <div class="header-left">
-            <div class="logo">
-                <img src="https://i.logos-download.com/1423/330-s320-9cb0f6cdcbc2ece79b7158422f2cb62b.avif/Amazon_Logo_2024-s320.avif"></span>
-      
-      
-  
-            
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="Electronics">
+                        <label for="Electronics">Electronics</label>
+                    </div>
+
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Mens</label>
+                    </div>
+                </div>
+
+                <!-- Price range -->
+                <div class="price-range-filter">
+                    <h3>Price Range</h3>
+                    <input type="range" name="" id="">
+                    <div class="range-value">
+                        <p>0</p>
+                        <p>50000</p>
+                    </div>
+                </div>
+
+                <!-- Brand filters -->
+                <div class="brand-filters">
+                    <h3>Brand</h3>
+                    <div class="filter-row">
+                        <input type="checkbox" id="mens">
+                        <label for="mens">Mens</label>
+                    </div>
+
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="womens">
+                        <label for="womens">Womens</label>
+                    </div>
+
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="Electronics">
+                        <label for="Electronics">Electronics</label>
+                    </div>
+
+                    <div class="filter-row">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Mens</label>
+                    </div>
+                </div>
+
             </div>
-            
-            <div class="delivery-location">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="address">
-                    <span class="address-top">Delivering To Lucknow 226202</span>
-                    
-                    
-                    <span class="addres-bottom">Update Location</span>
+
+            <!-- Right side of page (where products will be shown) -->
+            <div class="page-right">
+
+                <!-- Header with search and sort options -->
+                <div class="page-header">
+
+                    <!-- Left side of header (shows total products count) -->
+                    <div class="page-header-left">
+                        <h1>Showing <span class="total-products-count">40</span> Products</h1>
+                    </div>
+
+                    <!-- Right side of header (search and sort options) -->
+                    <div class="page-header-right">
+                        <div class="search">
+                            <input type="text" placeholder="Search By Product Name...">
+                        </div>
+                        <div class="sort">
+                            <select name="" id="">
+                                <option value="">Sort By Name (A-Z)</option>
+                                <option value="">Sort By Name (Z-A)</option>
+                                <option value="">Sort By Price (Asc)</option>
+                                <option value="">Sort By Price (Desc)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actual products will ui code -->
+                <div class="products-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                                alt="Product Image">
+                        </div>
+                        <h1 class="product-title">Mens Casual Premium Slim Fit T-Shirts</h1>
+                        <h2 class="product-price">Rs. 1500</h2>
+                        <div class="product-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ratings-count">(500 reviews)</span>
+                        </div>
+                        <div class="product-category">Mens</div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
 
-        <!--header section of center-->
-
-        <div class="header-center">
-            <select class="search-categories">
-                <option>All</option>
-                <option>All Categories</option>
-                <option>Shirts</option>
-                <option>Trouser</option>
-                <option>Kurtas</option>
-                <option>Shoes</option>
-                <option>Electronics</option>
-                <option>Smartphones</option>
-            </select>
-
-            <input type="text" class="search-item-input" placeholder="Search Amazon.in">
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-
-        <!--header section of right-->
-
-        <div class="header-right">
-            <div class="item1">
-                <img src="OIP (2).jpeg">
-                <span>ENG</span>
-            </div>
-            <div class="item2">
-                <span>Hello,Sign in</span>
-                <span>Account & Lists</span>
-            </div>
-            <div class="item3">
-                <span>Returns</span>
-                <span>& Order</span>
-            </div>
-            <div class="item4">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
-            </div>
-        </div>
-    </header>
-        <!--Bottom strip below header-->
-
-        <div class="header-bottom-strip">
-            <div class="header-strip-left">
-                <span>Fresh</span>
-                <span>Amazon Pay</span>
-                <span>Mobiles</span>
-                <span>Today's Deals</span>
-                <span>Coupns</span>
-                <span>Flight</span>
-                <span>Electronics</span>
-                <span>Computers</span>
-                <span>New Releases</span>
-                <span>Best Sellers</span>
-                <span>Video Games</span>
-                <span>Fashion</span>
-                <span>Home & kitchen</span>
-                
-            </div>
-            <div class="header-strip-right">
-                <img src="https://m.media-amazon.com/images/G/31/Events/img25/Nimesh/J26_GW_SWM_ED_V2_NEW._CB768029556_.jpg" alt="">
-            </div>
-        </div>
-
-        <main>
-            <section  class="hero-section">
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/51ol-lzjWKL._SR854,1368_.jpg" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Starting From ₹99</h1>
-                <p>Get upto 50% off</p>
-                </div>
-            </div>
-            
-            
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/6139cY-YU8L._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Under ₹999</h1>
-                <h1>Headphones</h1>
-                <p>Get upto ₹150 Cashback</p>
-                <p>Free Delivery    |  Easy Returns</p>
-            </div>
-            </div>
-            
-
-             
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/61e1nZuDr4L._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Under ₹499</h1>
-                <p>Get upto ₹150 Cashback</p>
-                <p>Free Delivery | Easy Returns</p>
-            </div>
-            </div>
-            
-           
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/61vZNKOXNpL._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Up to 70% Off</h1>
-                <h1>Storage Devices</h1>
-                <p>Get upto 50% off</p>
-                <p>Free Delivery | Easy Returns</p>
-            </div>
-            </div>
-
-            
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/71gQFsTOIuL._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Starting under ₹1199</h1>
-                <h1>Smart Watches</h1>
-                <p>Get upto 50% off</p>
-                <p>Free Delivery | Easy Returns</p>
-            </div>
-            </div>
-
-          
-            <div class="hero-card">
-                <img src="https://m.media-amazon.com/images/I/71Ejcbq0QYL._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="Hero Section Image">
-
-                <div class="hero-card-text-content">
-                <h1>Under ₹499</h1>
-                <h1>Facewashes</h1>
-                <p>Get upto 50% off</p>
-                <p>Free Delivery | Easy Returns</p>
-            </div>
-            </div>
-       </section>
-
-
-       <section class="production-section">
-        <div class="production-card">
-            <div class="product-card-header">
-            <h1>Discover Exicting Offers</h1>
-            <span></span>
-        </div>
-
-        <section class="production-section">
-        <div class="product-card-body">
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-      
-            
-      
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/719HoVVugVL._AC_AIweblab1374086,T2_FMavif_SF232.5,232.5_QL54_.jpg?aicid=homepage-faceout" alt="">
-                <span>EVEREADY 9W LED Bulb, Cool Day Light (6500K), B22 Base</span>
-                <p>Get upto ₹150 Off </p>
-            </div>
-           
-
-           
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-      
-
-            
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-          
-
-          
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-           
-
-          
-            <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-
-             <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-
-             <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-
-             <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-
-             <div class="product-image">
-                <img src="https://m.media-amazon.com/images/I/71ke2BEdIhL._AC_SX296_SY426_FMwebp_QL65_.jpg" alt="">
-                <span>Upto 50% Off</span>
-            </div>
-          
-        </div>
-        </div>
-       </section>
-        </main>
-
-    
+    <script src="index.js"></script>
 </body>
+
 </html>
